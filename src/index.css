@@ -7,6 +7,86 @@
   --color-surface: #F9FBFF;
 }
 
+:root {
+  color: #0f172a;
+  background: #f9fbff;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+::selection {
+  color: white;
+  background: #002879;
+}
+
+@layer components {
+  .button {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.625rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 180ms ease, background-color 180ms ease,
+      border-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
+  .button:focus-visible,
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid rgb(255 119 1 / 35%);
+    outline-offset: 3px;
+  }
+
+  .button-primary {
+    color: white;
+    background: #002879;
+    box-shadow: 0 8px 18px rgb(0 40 121 / 14%);
+  }
+
+  .button-primary:hover {
+    background: #001f5e;
+    box-shadow: 0 10px 22px rgb(0 40 121 / 22%);
+  }
+
+  .button-secondary {
+    color: #334155;
+    background: white;
+    border: 1px solid #cbd5e1;
+  }
+
+  .button-secondary:hover {
+    color: #002879;
+    border-color: #002879;
+    box-shadow: 0 8px 18px rgb(15 23 42 / 8%);
+  }
+
+  .button-accent {
+    color: white;
+    background: #ff7701;
+    box-shadow: 0 8px 18px rgb(255 119 1 / 20%);
+  }
+
+  .button-accent:hover {
+    background: #e86600;
+    box-shadow: 0 10px 22px rgb(255 119 1 / 28%);
+  }
 }

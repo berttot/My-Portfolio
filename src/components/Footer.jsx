@@ -11,7 +11,7 @@ function Footer() {
 
         <div className="flex flex-col gap-2 sm:items-end">
           <a
-            href="/Elbert-Cahanap-Resume.pdf"
+            href="/Elbert-Cahanap-Resume.pdf?v=20261003"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-navy transition hover:text-orange"

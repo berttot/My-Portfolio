@@ -41,7 +41,7 @@ function Navbar() {
 
             <a
               href="#contact"
-              className="rounded-lg bg-navy px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-navy-dark"
+              className="button button-primary px-5 py-2.5"
             >
               Contact
             </a>
@@ -75,7 +75,7 @@ function Navbar() {
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="mt-2 rounded-lg bg-navy px-4 py-3 text-center text-sm font-semibold text-white"
+                className="button button-primary mt-2 w-full"
               >
                 Contact
               </a>

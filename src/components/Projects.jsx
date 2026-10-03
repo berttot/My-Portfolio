@@ -251,7 +251,7 @@ function Projects() {
                       href={project.figma}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-lg bg-navy px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-navy-dark"
+                      className="button button-primary"
                     >
                       View in Figma
                     </a>
@@ -261,10 +261,10 @@ function Projects() {
                     <button
                       type="button"
                       onClick={() => openGallery(project)}
-                      className={`rounded-lg px-4 py-2.5 text-sm font-semibold transition ${
+                      className={`button ${
                         project.figma
-                          ? 'border border-slate-300 bg-white text-slate-700 hover:border-navy hover:text-navy'
-                          : 'bg-navy text-white hover:bg-navy-dark'
+                          ? 'button-secondary'
+                          : 'button-primary'
                       }`}
                     >
                       {project.figma ? 'View Preview' : 'View Screenshots'}
@@ -275,7 +275,7 @@ function Projects() {
                     <a
                       href={project.executable}
                       download
-                      className="rounded-lg border border-orange bg-white px-4 py-2.5 text-sm font-semibold text-orange transition hover:bg-orange hover:text-white"
+                      className="button button-secondary border-orange text-orange hover:bg-orange hover:text-white"
                     >
                       Download for Testing
                     </a>
@@ -286,7 +286,7 @@ function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-navy hover:text-navy"
+                      className="button button-secondary"
                     >
                       GitHub Repository
                     </a>

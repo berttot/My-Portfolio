@@ -1,124 +1,119 @@
-import profile from '../assets/profile.png'
+import heroPhoto from '../assets/hero.jpg'
 
 function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden bg-surface px-6 pb-20 pt-32 lg:px-8"
+      className="relative overflow-hidden bg-surface px-6 pb-16 pt-28 lg:px-8 lg:pb-24 lg:pt-32"
     >
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-navy/5 blur-3xl" />
-        <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-orange/5 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-gradient-to-l from-navy/[0.06] to-transparent lg:block" />
+        <div className="absolute -left-24 top-24 h-72 w-72 rounded-full bg-orange/10 blur-3xl" />
+        <div className="absolute bottom-0 right-1/3 h-64 w-64 rounded-full bg-navy/10 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
-        <div>
-          <div className="mb-5 flex items-center gap-3">
-            <span className="h-px w-8 bg-orange" aria-hidden="true" />
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange">
-              4th-Year BSIT Student
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-14">
+        <div className="max-w-xl">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange/70" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-orange" />
+            </span>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-600">
+              Open for OJT
             </p>
           </div>
 
-          <h1 className="max-w-4xl text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+          <h1 className="text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
             Elbert
-            <br />
-            <span className="text-navy">Cahanap</span>
+            <span className="block text-navy">Cahanap</span>
           </h1>
 
           <p className="mt-5 text-xl font-semibold text-slate-700 sm:text-2xl">
             Aspiring Software & Web Developer
           </p>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-            I am a BSIT student at Bukidnon State University with hands-on
-            experience developing academic projects involving software, web
-            applications, databases, mobile applications, and emerging
-            technologies.
-          </p>
-
-          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-500">
-            Currently preparing for my OJT, I am looking forward to applying
-            what I have learned in a professional environment while continuing
-            to learn, contribute, and grow.
+          <p className="mt-6 text-lg leading-8 text-slate-600">
+            BSIT student at Bukidnon State University building software, web
+            apps, databases, and mobile projects — ready to bring that work
+            into a professional team.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="rounded-lg bg-navy px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-navy-dark hover:shadow-md"
+              className="button button-primary px-6 py-3.5"
             >
               View My Projects
             </a>
 
             <a
               href="#contact"
-              className="rounded-lg border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-navy hover:text-navy"
+              className="button button-secondary px-6 py-3.5"
             >
               Get In Touch
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-slate-200 pt-6">
+          <dl className="mt-10 grid grid-cols-1 gap-5 border-t border-slate-200 pt-6 sm:grid-cols-3">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+              <dt className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                 Education
-              </p>
-              <p className="mt-1 text-sm font-medium text-slate-700">
+              </dt>
+              <dd className="mt-1 text-sm font-medium text-slate-700">
                 BS Information Technology
-              </p>
+              </dd>
             </div>
-
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+              <dt className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                 University
-              </p>
-              <p className="mt-1 text-sm font-medium text-slate-700">
+              </dt>
+              <dd className="mt-1 text-sm font-medium text-slate-700">
                 Bukidnon State University
-              </p>
+              </dd>
             </div>
-
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+              <dt className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                 Focus
-              </p>
-              <p className="mt-1 text-sm font-medium text-slate-700">
+              </dt>
+              <dd className="mt-1 text-sm font-medium text-slate-700">
                 Software & Web Development
-              </p>
+              </dd>
             </div>
-          </div>
+          </dl>
         </div>
 
-        <div className="flex justify-center lg:justify-end">
-          <div className="relative">
-            <div className="relative rounded-[2rem] bg-gradient-to-tr from-navy to-orange p-1.5 shadow-2xl">
-              <div className="flex h-[340px] w-[300px] items-center justify-center overflow-hidden rounded-[1.7rem] bg-white p-5 sm:h-[420px] sm:w-[360px] sm:p-7">
-                <img
-                  src={profile}
-                  alt="Elbert Cahanap"
-                  className="h-full w-full object-contain"
-                />
-              </div>
-            </div>
+        <div className="relative mx-auto mb-6 w-full max-w-[280px] pb-4 sm:max-w-[300px] lg:mb-0 lg:ml-auto lg:mr-4">
+          <div
+            className="absolute -right-2 top-5 hidden h-[82%] w-[90%] rounded-3xl bg-navy/90 lg:block"
+            aria-hidden="true"
+          />
+          <div
+            className="absolute -bottom-3 -left-3 hidden h-16 w-16 rounded-2xl bg-orange/80 lg:block"
+            aria-hidden="true"
+          />
 
-            <div className="absolute -bottom-6 -left-6 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-xl">
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Current Status
-              </p>
-              <p className="mt-1 text-sm font-bold text-navy">
-                Preparing for OJT
-              </p>
-            </div>
+          <div className="relative overflow-hidden rounded-3xl border border-white bg-slate-100 shadow-lg">
+            <img
+              src={heroPhoto}
+              alt="Elbert Cahanap, BSIT student and aspiring software developer"
+              className="h-[320px] w-full object-cover object-[center_16%] sm:h-[360px] lg:h-[400px]"
+            />
+          </div>
 
-            <div className="absolute -right-5 top-8 rounded-2xl bg-navy px-5 py-4 shadow-xl">
-              <p className="text-xs font-semibold uppercase tracking-wider text-blue-200">
+          <div className="absolute -bottom-4 left-1/2 flex w-[calc(100%+1.5rem)] -translate-x-1/2 justify-center gap-2">
+            <div className="rounded-xl border border-slate-200 bg-white px-3 py-2 shadow-sm">
+              <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                Status
+              </p>
+              <p className="text-xs font-bold text-navy">Preparing for OJT</p>
+            </div>
+            <div className="rounded-xl bg-navy px-3 py-2 shadow-sm">
+              <p className="text-[10px] font-semibold uppercase tracking-wider text-blue-200">
                 Degree
               </p>
-              <p className="mt-1 text-sm font-bold text-white">BSIT</p>
+              <p className="text-xs font-bold text-white">BSIT</p>
             </div>
-
-            <div className="pointer-events-none absolute -bottom-10 -right-10 h-28 w-28 rounded-full bg-orange/20 blur-3xl" />
-            <div className="pointer-events-none absolute -left-10 -top-10 h-24 w-24 rounded-full bg-navy/20 blur-3xl" />
           </div>
         </div>
       </div>

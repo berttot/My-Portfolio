@@ -14,8 +14,8 @@ const journey = [
   },
   {
     year: '3rd Year',
-    focus: 'Full-Stack & Emerging Tech',
-    highlight: 'COT Inventory (MERN) & Higaonon AI Translation App',
+    focus: 'Full-Stack, AI & Networking',
+    highlight: 'COT Inventory, Higaonon AI App & Networking 2',
   },
   {
     year: '4th Year',
@@ -94,6 +94,28 @@ function About() {
             of Bukidnon. This project introduced me to applying artificial
             intelligence and language technologies to a real-world cultural and
             community need.
+          </p>
+
+          <p>
+            In my third year, I also completed{' '}
+            <strong className="font-semibold text-slate-900">
+              Networking 2
+            </strong>
+            , which strengthened my understanding of how computers and services
+            actually communicate. Through this subject, I gained practical
+            knowledge in{' '}
+            <strong className="font-semibold text-slate-900">
+              switching, routing, VLANs, wireless networking, and network
+              troubleshooting
+            </strong>
+            . I learned how to configure and secure network devices, understand
+            traffic flow across a network, and apply Cisco networking concepts
+            through hands-on labs. This also led me to complete the{' '}
+            <strong className="font-semibold text-slate-900">
+              Cisco CCNA: Switching, Routing, and Wireless Essentials
+            </strong>{' '}
+            course, which helped me connect software development with the
+            infrastructure that applications run on.
           </p>
 
           <p>

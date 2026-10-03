@@ -23,17 +23,24 @@ function Resume() {
             </p>
           </div>
 
-          <div>
+          <div className="flex flex-wrap gap-3">
             <a
-              href="/Elbert-Cahanap-Resume.pdf"
+              href="/Elbert-Cahanap-Resume.pdf?v=20261003"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-orange px-6 py-3 text-sm font-bold text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-orange/90"
+              className="button button-accent px-6 py-3"
             >
               View My Resume
               <span className="ml-2" aria-hidden="true">
                 ↗
               </span>
+            </a>
+            <a
+              href="/Elbert-Cahanap-Resume.pdf?v=20261003"
+              download="Elbert-Cahanap-Resume.pdf"
+              className="button border border-white/30 bg-white/10 px-6 py-3 text-white hover:bg-white/20"
+            >
+              Download
             </a>
           </div>
         </div>
