@@ -38,16 +38,22 @@ function OJT() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 lg:p-8">
-          <p className="text-sm font-semibold text-slate-900">
-            What I can bring
-          </p>
+        <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm lg:p-8">
+          <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-orange to-navy" />
+          <div className="flex items-center justify-between gap-4">
+            <p className="text-sm font-bold uppercase tracking-[0.14em] text-slate-900">
+              What I can bring
+            </p>
+            <span className="rounded-full bg-orange/10 px-3 py-1 text-xs font-bold text-orange">
+              Ready to learn
+            </span>
+          </div>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             {strengths.map((item) => (
               <div
                 key={item}
-                className="flex items-center gap-3 text-sm text-slate-600"
+                className="flex items-start gap-3 text-sm leading-5 text-slate-600"
               >
                 <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-navy text-xs text-white">
                   ✓

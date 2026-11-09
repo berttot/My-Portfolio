@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-surface px-6 pb-16 pt-28 lg:px-8 lg:pb-24 lg:pt-32"
+      className="relative overflow-hidden bg-surface px-6 pb-20 pt-28 lg:px-8 lg:pb-28 lg:pt-36"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-gradient-to-l from-navy/[0.06] to-transparent lg:block" />
@@ -13,7 +13,7 @@ function Hero() {
       </div>
 
       <div className="relative mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-14">
-        <div className="max-w-xl">
+        <div className="max-w-2xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange/70" />
@@ -24,12 +24,12 @@ function Hero() {
             </p>
           </div>
 
-          <h1 className="text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+          <h1 className="text-5xl font-bold leading-[1.02] tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
             Elbert
             <span className="block text-navy">Cahanap</span>
           </h1>
 
-          <p className="mt-5 text-xl font-semibold text-slate-700 sm:text-2xl">
+          <p className="mt-6 text-xl font-semibold text-slate-700 sm:text-2xl">
             Aspiring Software & Web Developer
           </p>
 
@@ -53,14 +53,23 @@ function Hero() {
             >
               Get In Touch
             </a>
+
+            <a
+              href="/Elbert-Cahanap-Resume.pdf?v=20261003"
+              download="Elbert-Cahanap-Resume.pdf"
+              className="button button-secondary px-6 py-3.5"
+            >
+              Download Resume
+              <span aria-hidden="true">↓</span>
+            </a>
           </div>
 
-          <dl className="mt-10 grid grid-cols-1 gap-5 border-t border-slate-200 pt-6 sm:grid-cols-3">
+          <dl className="mt-10 grid grid-cols-1 gap-4 border-t border-slate-200 pt-6 sm:grid-cols-3">
             <div>
               <dt className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                 Education
               </dt>
-              <dd className="mt-1 text-sm font-medium text-slate-700">
+              <dd className="mt-2 text-sm font-semibold leading-5 text-slate-700">
                 BS Information Technology
               </dd>
             </div>
@@ -68,7 +77,7 @@ function Hero() {
               <dt className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                 University
               </dt>
-              <dd className="mt-1 text-sm font-medium text-slate-700">
+              <dd className="mt-2 text-sm font-semibold leading-5 text-slate-700">
                 Bukidnon State University
               </dd>
             </div>
@@ -76,7 +85,7 @@ function Hero() {
               <dt className="text-xs font-semibold uppercase tracking-wider text-slate-400">
                 Focus
               </dt>
-              <dd className="mt-1 text-sm font-medium text-slate-700">
+              <dd className="mt-2 text-sm font-semibold leading-5 text-slate-700">
                 Software & Web Development
               </dd>
             </div>
@@ -93,7 +102,7 @@ function Hero() {
             aria-hidden="true"
           />
 
-          <div className="relative overflow-hidden rounded-3xl border border-white bg-slate-100 shadow-lg">
+          <div className="relative overflow-hidden rounded-3xl border-4 border-white bg-slate-100 shadow-xl ring-1 ring-slate-200">
             <img
               src={heroPhoto}
               alt="Elbert Cahanap, BSIT student and aspiring software developer"

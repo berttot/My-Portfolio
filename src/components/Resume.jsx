@@ -3,9 +3,11 @@ import Section from './Section'
 function Resume() {
   return (
     <Section id="resume" variant="white">
-      <div className="rounded-2xl bg-navy p-8 text-white shadow-xl lg:p-12">
+      <div className="relative overflow-hidden rounded-2xl bg-navy p-8 text-white shadow-xl lg:p-12">
+        <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-white/10" />
+        <div className="pointer-events-none absolute -bottom-24 left-1/3 h-64 w-64 rounded-full bg-orange/15" />
         <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div className="max-w-2xl">
+          <div className="relative max-w-2xl">
             <div className="flex items-center gap-3">
               <span className="h-px w-8 bg-orange" aria-hidden="true" />
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange">
@@ -23,7 +25,7 @@ function Resume() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="relative flex flex-wrap gap-3">
             <a
               href="/Elbert-Cahanap-Resume.pdf?v=20261003"
               target="_blank"

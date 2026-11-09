@@ -127,10 +127,16 @@ function About() {
         </div>
 
         <div className="lg:pl-8">
-          <div className="rounded-2xl border border-slate-200 bg-surface p-8">
-            <h3 className="text-lg font-bold text-slate-900">
+          <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-surface p-6 shadow-sm lg:p-8">
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-orange to-navy" />
+            <div className="flex items-center justify-between gap-4">
+              <h3 className="text-lg font-bold text-slate-900">
               Academic Journey
-            </h3>
+              </h3>
+              <span className="rounded-full bg-navy/10 px-3 py-1 text-xs font-bold text-navy">
+                4 years
+              </span>
+            </div>
 
             <div className="mt-6 space-y-6">
               {journey.map((item, index) => (
@@ -151,7 +157,7 @@ function About() {
                     {item.year}
                   </p>
 
-                  <p className="mt-1 font-medium text-slate-900">
+                  <p className="mt-1 font-semibold text-slate-900">
                     {item.focus}
                   </p>
 
