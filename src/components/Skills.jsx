@@ -12,7 +12,7 @@ const skillGroups = [
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Express.js', 'Laravel'],
+    skills: ['Node.js', 'Express.js', 'Laravel', 'PHP'],
   },
   {
     title: 'Database',

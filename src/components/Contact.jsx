@@ -42,7 +42,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/YOUR_USERNAME"
+            href="https://www.linkedin.com/in/elbert-cahanap"
             target="_blank"
             rel="noopener noreferrer"
             className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-navy/30 hover:shadow-lg"

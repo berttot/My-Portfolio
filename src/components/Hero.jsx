@@ -55,7 +55,7 @@ function Hero() {
             </a>
 
             <a
-              href="/Elbert-Cahanap-Resume.pdf?v=20261003"
+              href="/Elbert-Cahanap-Resume.pdf?v=20261126"
               download="Elbert-Cahanap-Resume.pdf"
               className="button button-secondary px-6 py-3.5"
             >

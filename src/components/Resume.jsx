@@ -27,7 +27,7 @@ function Resume() {
 
           <div className="relative flex flex-wrap gap-3">
             <a
-              href="/Elbert-Cahanap-Resume.pdf?v=20261003"
+              href="/Elbert-Cahanap-Resume.pdf?v=20261126"
               target="_blank"
               rel="noopener noreferrer"
               className="button button-accent px-6 py-3"
@@ -38,7 +38,7 @@ function Resume() {
               </span>
             </a>
             <a
-              href="/Elbert-Cahanap-Resume.pdf?v=20261003"
+              href="/Elbert-Cahanap-Resume.pdf?v=20261126"
               download="Elbert-Cahanap-Resume.pdf"
               className="button border border-white/30 bg-white/10 px-6 py-3 text-white hover:bg-white/20"
             >
