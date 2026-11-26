@@ -8,7 +8,7 @@ const certificates = [
     provider: 'Civil Service Commission',
     category: 'Eligibility',
     file: '/certificates/csc-career-service-professional.pdf',
-    image: '/certificates/previews/csc-career-service-professional.jpg',
+    image: '/certificates/previews/csc-career-service-result.png',
   },
   {
     title: 'TOPCIT Level 3',
